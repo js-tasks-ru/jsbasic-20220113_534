@@ -1,5 +1,5 @@
 function sum(m, n) {
-    return (+m + +n);
+    return m + n;
 }
-let result = sum(m, n);
+let result = sum(1, 4);
 alert(result);

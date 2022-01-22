@@ -12,21 +12,21 @@ function print(text) {
  * @returns {boolean}
  */
 function isValid(name) {
-    let space = false;
-    for (let i = 0; i <= name.length; i++) {
-        if (name[i] === " ") {
-            space = (true)
+    if (name != null) {
+        let space = false
+        for (let i = 0; i <= name.length; i++) {
+            if (name[i] === " ") {
+                space = true
+            }
         }
+        if (name.length >= 4 && !space) {
+            return true
+        } else {
+            return false
+        }
+    } else {
+        return false
     }
-
-    if (name.length > 4 && !space) {
-
-        return (true)
-    }
-
-
-
-
 }
 
 
